@@ -1,0 +1,21 @@
+.select-reset {
+    all: unset !important;
+}
+
+/*.nice-select {
+    display: none !important;
+}*/
+
+#ecriture {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+
+#ecriture th {
+    font-size: small;
+}
+
+#ecriture input {
+    width: 5vw;
+}

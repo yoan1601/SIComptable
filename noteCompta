@@ -1,0 +1,22 @@
+ACTIF ka solde debiteur 
+amortissement : 
+ immo corp/incorp : 281 / 280 
+ stock/actif courant : 39 
+ client 41 : 491 
+ impot/benefice : 44 
+ 
+Journal OD / operations diverses
+compte 68 : dotation
+
+PASSIF ka solde crediteur
+101 capital tsy mahazo < 0
+105 reserves légales 5% an benefice atao fanampin'ny capital
+resultat en attente d'affectation 128 (possible < 0)
+resultat net 120 (possible < 0)
+autre capitaux propres 11 (possible < 0) 
+
+RESULTAT
+à sommer :
+	60 
+	61/62
+

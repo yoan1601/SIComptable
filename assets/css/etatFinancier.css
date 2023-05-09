@@ -1,0 +1,33 @@
+.tableau {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+
+.tableau th {
+    font-size: small;
+}
+
+.tableau input {
+    width: 5vw;
+}
+#actif_passif{
+    border: solid 1px;
+    background-color: rgb(247, 247, 247);
+    margin: 20px;
+    padding: 10px;
+}
+#resultat{
+    border: solid 1px;
+    background-color: rgb(247, 247, 247);
+    margin: 20px;
+    padding: 10px;
+}
+
+.button_ef{
+    margin-left: 25px;
+}
+.centered{
+    display: flex;
+    justify-content: space-around;
+}
