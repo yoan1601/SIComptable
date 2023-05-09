@@ -98,7 +98,7 @@ class AdminModel extends CI_Model
         if(count($exclus) > 0) {
             $sqlExclu = $this->constrExclusSql($exclus);
         }
-        $sql = "SELECT LEFT(numcompte, ".$l.") AS groupe, SUM(debit) as debit, SUM(credit) as credit
+        $sql = "SELECT LEFT(numcompte, ".$l.") AS groupe, SUM(debit::numeric) as debit, SUM(credit::numeric) as credit
                 FROM entreeecriture
                 WHERE LEFT(numcompte, ".$l.") = '".$prefixe."' 
                 AND dateentree >= '".$debut_exercice."' AND dateentree <= '".$fin_choisi."'
