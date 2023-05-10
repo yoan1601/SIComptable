@@ -4,9 +4,9 @@
  include("utile.php");
  $connexion = getConnectionPqsql();
 
- $id = $_POST['numero'];
+ $idChargeProduit = $_POST['idChargeProduit'];
 
- $sql = "SELECT * from chargesProduitsCentres WHERE idChargesProduits = ".$id;
+ $sql = "SELECT * from chargesProduitsCentres WHERE idChargesProduits = ".$idChargeProduit;
 
  $resultats=$connexion->query($sql);
 

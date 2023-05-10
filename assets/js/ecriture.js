@@ -52,13 +52,13 @@ function verifCompte() {
           console.log(xhrGetC6ChargeProduit.responseText);
           var resultats_charge_produit = JSON.parse(xhrGetC6ChargeProduit.responseText);
 
-          if (resultats_charge_produit.length == 0) {
+          if (resultats_charge_produit == null) {
             //champ vide
             console.log("le compte " + numCompteDerniereLigne + " n'existe pas encore dans charge produit");
           }
           else if (resultats_charge_produit.length > 0) {
             resultats_charge_produit.forEach(resultat_charge_produit => {
-              console.log(resultat_charge_produit);
+              //console.log('resultat_charge_produit.id '+ resultat_charge_produit.id);
 
               //remplissage champ
               //console.log(resultat_charge_produit.idproduit);
@@ -77,7 +77,7 @@ function verifCompte() {
 
               //centres
               //AJAX recuperation charges produits centres
-              console.log(resultat_charge_produit);
+              //console.log(resultat_charge_produit);
               var xhrGetC6ChargeProduitCentre = newXhr();
               xhrGetC6ChargeProduitCentre.addEventListener("load", function (event) {
 
@@ -96,7 +96,7 @@ function verifCompte() {
               const formHTML = document.createElement("form");
               const input = document.createElement("input");
               input.setAttribute('type', 'hidden');
-              input.setAttribute('name', 'numero');
+              input.setAttribute('name', 'idChargeProduit');
               input.value = resultat_charge_produit.id;
               formHTML.appendChild(input);
               const formJSON = new FormData(formHTML);
